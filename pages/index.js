@@ -74,6 +74,8 @@ export default function PaginaInicial() {
   const routeamento = useRouter();
   // console.log('route', routeamento);
 
+  
+
   function condicao() {
     if (username.length > 2) {
       return `https://github.com/${username}.png`;

@@ -1,5 +1,6 @@
+PRIMEIROS PASSOS DADO:
 # npm init -y
-#npm install next react react-dom
+#npm install next react react-dom -- instalando o next
 # "scripts": { 
     "dev": "next dev", -- roda o modo de desenvolvimento
     "build": "next build",
@@ -7,15 +8,17 @@
     "lint": "next lint"
   } --------------------------- comandos para ajudar a rodar o projeto
 # siga a documentação para os proximos passos
-
+https://nextjs.org/ -- biblioteca
 
 #usarei css in js
-https://github.com/vercel/styled-jsx
-
-
-https://mui.com/pt/ -- biblioteca
-https://nextjs.org/ -- biblioteca
 https://storybook.js.org/ -- biblioteca style
+https://storybook.skynexui.dev/?path=/story/components-box--box-component
   ---npm add @skynexui/components --> comando que instala essa biblioteca
+
+
+https://github.com/vercel/styled-jsx
+https://mui.com/pt/ -- biblioteca
+
 https://github.com/vercel/next.js/
 https://vercel.com/dashboard
+https://api.github.com/users/ingrid-paulino -- mostra um objeto com meus dados do githutb, 
