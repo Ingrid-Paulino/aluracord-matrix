@@ -155,7 +155,7 @@ export default function PaginaInicial() {
                 borderRadius: '50%',
                 marginBottom: '16px',
               }}
-              src={`https://github.com/${username}.png`}
+              src={`https://github.com/${username}.png`} //se eu pegar qualquer usuario github e colocar ao final .png, eu consigo pegar a imagem do nome do usuario
             />
             <Text
               variant="body4"

@@ -18,3 +18,4 @@ https://nextjs.org/ -- biblioteca
 https://storybook.js.org/ -- biblioteca style
   ---npm add @skynexui/components --> comando que instala essa biblioteca
 https://github.com/vercel/next.js/
+https://vercel.com/dashboard
