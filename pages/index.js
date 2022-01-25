@@ -1,5 +1,5 @@
 import React from "react";
-import { useRouter } from 'next/router' //router/routiamento do next
+import { useRouter } from "next/router"; //router/routiamento do next
 import { Box, Button, Text, TextField, Image } from "@skynexui/components";
 import appConfig from "../config.json";
 
@@ -74,6 +74,12 @@ export default function PaginaInicial() {
   const routeamento = useRouter();
   // console.log('route', routeamento);
 
+  function condicao() {
+    if (username.length > 2) {
+      return `https://github.com/${username}.png`;
+    }
+  }
+
   return (
     <>
       {/* <GlobalStyle /> */}
@@ -114,12 +120,11 @@ export default function PaginaInicial() {
             onSubmit={function (infoDoEvento) {
               //preventDefault  para de ficar recarregando a pagina, e me da o controle de como ir pa a proxima pagina. Ele vai pra uma url que foi definido como destino se não definiu fica nela mesma.
               infoDoEvento.preventDefault();
-              console.log('Alguem submeteu o form');
+              console.log("Alguem submeteu o form");
 
               // window.location.href = '/chat'; //muda de pagina quando eu clicar no botao -- isso ja daria certo mas o next passa pra gente o seu rotiamento -- dessa forma faz refrech na pagina toda
 
-              routeamento.push('/chat') // evita e o refrech da pagina e muda so o conteudo
-
+              routeamento.push("/chat"); // evita e o refrech da pagina e muda so o conteudo
             }} //evita o refresh inteiro da pagina quando o botão for clicado
             styleSheet={{
               display: "flex",
@@ -173,7 +178,7 @@ export default function PaginaInicial() {
             <TextField
               value={username}
               //toda vez que o usuario digitar, essa função sera chamada
-              onChange={ function handleChange(event) {
+              onChange={function handleChange(event) {
                 // console.log('usuario digitou', event.target.value);
                 //Onde esta o valor?
                 const valor = event.target.value;
@@ -190,13 +195,6 @@ export default function PaginaInicial() {
                 },
               }}
             />
-
-
-
-
-
-
-
             <Button
               type="submit"
               label="Entrar"
@@ -232,7 +230,8 @@ export default function PaginaInicial() {
                 borderRadius: "50%",
                 marginBottom: "16px",
               }}
-              src={`https://github.com/${username}.png`} //se eu pegar qualquer usuario github e colocar ao final .png, eu consigo pegar a imagem do nome do usuario
+              // src={`https://github.com/${username}.png`} //se eu pegar qualquer usuario github e colocar ao final .png, eu consigo pegar a imagem do nome do usuario
+              src={condicao()}
             />
             <Text
               variant="body4"
