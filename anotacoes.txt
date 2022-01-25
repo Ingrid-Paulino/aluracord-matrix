@@ -6,7 +6,15 @@
     "start": "next start",
     "lint": "next lint"
   } --------------------------- comandos para ajudar a rodar o projeto
+# siga a documentação para os proximos passos
+
+
+#usarei css in js
+https://github.com/vercel/styled-jsx
 
 
 https://mui.com/pt/ -- biblioteca
 https://nextjs.org/ -- biblioteca
+https://storybook.js.org/ -- biblioteca style
+  ---npm add @skynexui/components --> comando que instala essa biblioteca
+https://github.com/vercel/next.js/
