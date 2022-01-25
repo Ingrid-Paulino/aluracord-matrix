@@ -1,0 +1,12 @@
+# npm init -y
+#npm install next react react-dom
+# "scripts": { 
+    "dev": "next dev", -- roda o modo de desenvolvimento
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  } --------------------------- comandos para ajudar a rodar o projeto
+
+
+https://mui.com/pt/ -- biblioteca
+https://nextjs.org/ -- biblioteca
