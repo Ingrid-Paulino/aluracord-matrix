@@ -104,7 +104,8 @@ export default function PaginaInicial() {
           >
             <Titulo tag="h2">Boas vindas de volta!</Titulo>
             <Text variant="body3" styleSheet={{ marginBottom: '32px', color: appConfig.theme.colors.neutrals[300] }}>
-              {appConfig.name}
+              {/* {appConfig.name} */}
+              <span class="jsx-112034374 sknui-span  sknui-text" for="" target="" name="" id="">Aluracord - Matrix (Ingrid)</span>
             </Text>
 
             <TextField
