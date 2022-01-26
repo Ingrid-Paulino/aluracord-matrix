@@ -1,10 +1,12 @@
 import React from "react";
 import { useRouter } from "next/router"; //router/routiamento do next
-import { Box, Button, Text, TextField, Image } from "@skynexui/components";
+import { Box, Button, Text, TextField, Image } from "@skynexui/components"; //https://storybook.js.org/
 import appConfig from "../config.json";
 
-// Component React
-// function GlobalStyle() {  //O globalStyle é blobal, mas so da pagina inicial
+// Components React
+
+//O globalStyle é blobal, mas so da pagina inicial. Por esse motivo usamos o arquivo _app.js
+// function GlobalStyle() {  
 //   return (
 //     <style global jsx>{`
 //       * {
@@ -74,8 +76,6 @@ export default function PaginaInicial() {
   const routeamento = useRouter();
   // console.log('route', routeamento);
 
-  
-
   function condicao() {
     if (username.length > 2) {
       return `https://github.com/${username}.png`;
@@ -128,6 +128,7 @@ export default function PaginaInicial() {
 
               routeamento.push("/chat"); // evita e o refrech da pagina e muda so o conteudo
             }} //evita o refresh inteiro da pagina quando o botão for clicado
+            
             styleSheet={{
               display: "flex",
               flexDirection: "column",
@@ -146,16 +147,7 @@ export default function PaginaInicial() {
                 color: appConfig.theme.colors.neutrals[300],
               }}
             >
-              {/* {appConfig.name} */}
-              <span
-                class="jsx-112034374 sknui-span  sknui-text"
-                for=""
-                target=""
-                name=""
-                id=""
-              >
-                Aluracord - Matrix (Ingrid)
-              </span>
+              {appConfig.name}
             </Text>
 
             {/* <input
