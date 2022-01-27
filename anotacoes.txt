@@ -21,4 +21,13 @@ https://mui.com/pt/ -- biblioteca
 
 https://github.com/vercel/next.js/
 https://vercel.com/dashboard
+
 https://api.github.com/users/ingrid-paulino -- mostra um objeto com meus dados do githutb, 
+
+https://api.github.com/users/ingrid-paulino/repos -- mostra um objeto com meus dados do repositorio do github 
+
+https://supabase.com/ -- back-end criarei um array que quarda as informaçoes em um servidor remoto, que vai dar todos os macanismos para fazer toda a sincronização com outros chats.
+- ele ja faz todas as validaçoes. essa é a vantagem dele. 
+- ele faz o papel de servidor. ex: node.js, java, php
+repositorio: https://github.com/supabase/supabase-js
+  - para usla precisamos baixar: npm install @supabase/supabase-js
