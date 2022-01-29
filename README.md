@@ -10,6 +10,8 @@ Aula 3 : Nessa aula criamos a estrutura do nosso chat e fizemos ele funcionar in
 
 Aula 4 : integrei com o Supabase, uma ferramenta de "Back-End as a Service" que nos ajudar a ter um banco de dados real time para guardar as mensagens do chat.
 
+Aula 5: Adicionamos stickers na aplicação
+
 
 Ferramentas Usadas: 
  - Next.js
