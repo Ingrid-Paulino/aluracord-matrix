@@ -73,8 +73,8 @@ export default function PaginaInicial() {
   // const stateDoReact = React.useState('');
   // console.log(stateDoReact);
   const [username, setUsername] = React.useState("Ingrid-Paulino");
-  const routeamento = useRouter();
-  // console.log('route', routeamento);
+  const roteamento= useRouter();
+  // console.log('route', roteamento);
 
   function condicao() {
     if (username.length > 2) {
@@ -125,8 +125,8 @@ export default function PaginaInicial() {
               console.log("Alguem submeteu o form");
 
               // window.location.href = '/chat'; //muda de pagina quando eu clicar no botao -- isso ja daria certo mas o next passa pra gente o seu rotiamento -- dessa forma faz refrech na pagina toda
-
-              routeamento.push("/chat"); // evita e o refrech da pagina e muda so o conteudo
+              roteamento.push(`/chat?username=${username}`);
+               // evita e o refrech da pagina e muda so o conteudo
             }} //evita o refresh inteiro da pagina quando o botão for clicado
             
             styleSheet={{
